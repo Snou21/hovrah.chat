@@ -1,0 +1,892 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>760</width>
+    <height>516</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Hovrah.Chat</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resoursce.qrc">
+    <normaloff>:/img/img/groundhog-day.png</normaloff>:/img/img/groundhog-day.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(178, 229, 237, 255), stop:0.50463 rgba(255, 255, 255, 255), stop:1 rgba(143, 240, 164, 255))</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_4">
+    <item row="1" column="0" colspan="4">
+     <widget class="Line" name="line_3">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="2">
+     <widget class="QPushButton" name="pushButton">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="font">
+       <font>
+        <family>Ubuntu</family>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+float: right;
+margin-right: 3%;
+margin-top: 5px;
+border-radius: 5px;
+padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgba(0, 206, 238, 1); 
+border-bottom: 4px solid rgba(0, 150, 174, 1);
+color: white;
+}
+
+QPushButton:hover{
+float: right;
+margin-right: 3%;
+margin-top: 5px;
+border-radius: 5px;
+padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgba(0, 222, 255, 1);
+border-bottom: 4px solid rgba(0, 206, 238,  1);
+color: white;
+}
+
+QPushButton:pressed{
+float: right;
+margin-right: 3%;
+margin-top: 5px;
+border-radius: 5px;
+padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgba(0, 206, 238, 1);
+border-bottom: 0px solid rgba(0, 206, 238, 1);
+color: white;
+}
+
+QPushButton:disabled{
+float: right;
+margin-right: 3%;
+margin-top: 5px;
+border-radius: 5px;
+padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgba(0, 206, 238, 1);
+border-bottom: 0px solid rgba(0, 206, 238, 1);
+color: rgba(0, 222, 255, 1);
+}
+
+
+
+</string>
+      </property>
+      <property name="text">
+       <string>Connect to server</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0" colspan="4">
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="1" column="3">
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="font">
+         <font>
+          <family>Ubuntu</family>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+float: right;
+margin-right: 3%;
+margin-top: 5px;
+border-radius: 5px;
+padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgba(0, 206, 238, 1); 
+border-bottom: 4px solid rgba(0, 150, 174, 1);
+color: white;
+}
+
+QPushButton:hover{
+float: right;
+margin-right: 3%;
+margin-top: 5px;
+border-radius: 5px;
+padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgba(0, 222, 255, 1);
+border-bottom: 4px solid rgba(0, 206, 238,  1);
+color: white;
+}
+
+QPushButton:pressed{
+float: right;
+margin-right: 3%;
+margin-top: 5px;
+border-radius: 5px;
+padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgba(0, 206, 238, 1);
+border-bottom: 0px solid rgba(0, 206, 238, 1);
+color: white;
+}
+
+QPushButton:disabled{
+float: right;
+margin-right: 3%;
+margin-top: 5px;
+border-radius: 5px;
+padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgba(0, 206, 238, 1);
+border-bottom: 0px solid rgba(0, 206, 238, 1);
+color: rgba(0, 222, 255, 1);
+}
+
+
+
+</string>
+        </property>
+        <property name="text">
+         <string>Reply to user 🔁</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <widget class="QListWidget" name="listWidget">
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: white</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" rowspan="3">
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="ip_line">
+          <property name="styleSheet">
+           <string notr="true">background-color: white</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="0" colspan="2">
+         <widget class="QLabel" name="label_5">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(255, 255, 255, 0)
+</string>
+          </property>
+          <property name="text">
+           <string>Emoji 😍</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="lasname_line">
+          <property name="styleSheet">
+           <string notr="true">background-color: white</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_7">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(255, 255, 255, 0)
+</string>
+          </property>
+          <property name="text">
+           <string>Server IP address*:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_4">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(255, 255, 255, 0)
+</string>
+          </property>
+          <property name="text">
+           <string>Last name:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="name_line">
+          <property name="styleSheet">
+           <string notr="true">background-color: white</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="2">
+         <widget class="QLabel" name="label">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(255, 255, 255, 0)
+</string>
+          </property>
+          <property name="text">
+           <string>User Info 📝</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="15" column="0" colspan="2">
+         <layout class="QGridLayout" name="gridLayout_5">
+          <item row="1" column="2">
+           <widget class="QPushButton" name="smileButton_15">
+            <property name="font">
+             <font>
+              <family>Noto Color Emoji</family>
+              <pointsize>24</pointsize>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: transparent; /* Прозрачный фон */
+    border: none; /* Убираем границы */
+    color: black; /* Цвет текста */
+	padding: 0px 0px;
+}
+
+
+
+
+</string>
+            </property>
+            <property name="text">
+             <string>👍</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="smileButton_4">
+            <property name="font">
+             <font>
+              <family>Noto Color Emoji</family>
+              <pointsize>24</pointsize>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: transparent; /* Прозрачный фон */
+    border: none; /* Убираем границы */
+    color: black; /* Цвет текста */
+	padding: 0px 0px;
+}
+
+
+
+
+</string>
+            </property>
+            <property name="text">
+             <string>🤔</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QPushButton" name="smileButton_2">
+            <property name="font">
+             <font>
+              <family>Noto Color Emoji</family>
+              <pointsize>24</pointsize>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: transparent; /* Прозрачный фон */
+    border: none; /* Убираем границы */
+    color: black; /* Цвет текста */
+	padding: 0px 0px;
+}
+
+
+
+
+</string>
+            </property>
+            <property name="text">
+             <string>😍</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QPushButton" name="smileButton_8">
+            <property name="font">
+             <font>
+              <family>Noto Color Emoji</family>
+              <pointsize>24</pointsize>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: transparent; /* Прозрачный фон */
+    border: none; /* Убираем границы */
+    color: black; /* Цвет текста */
+	padding: 0px 0px;
+}
+
+
+
+
+</string>
+            </property>
+            <property name="text">
+             <string>😎</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="smileButton_1">
+            <property name="font">
+             <font>
+              <family>Noto Color Emoji</family>
+              <pointsize>24</pointsize>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: transparent; /* Прозрачный фон */
+    border: none; /* Убираем границы */
+    color: black; /* Цвет текста */
+	padding: 0px 0px;
+}
+
+
+
+
+</string>
+            </property>
+            <property name="text">
+             <string>😂</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="3">
+           <widget class="QPushButton" name="smileButton_10">
+            <property name="font">
+             <font>
+              <family>Noto Color Emoji</family>
+              <pointsize>24</pointsize>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: transparent; /* Прозрачный фон */
+    border: none; /* Убираем границы */
+    color: black; /* Цвет текста */
+	padding: 0px 0px;
+}
+
+
+
+
+</string>
+            </property>
+            <property name="text">
+             <string>👎</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3">
+           <widget class="QPushButton" name="smileButton_11">
+            <property name="font">
+             <font>
+              <family>Noto Color Emoji</family>
+              <pointsize>24</pointsize>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: transparent; /* Прозрачный фон */
+    border: none; /* Убираем границы */
+    color: black; /* Цвет текста */
+	padding: 0px 0px;
+}
+
+
+
+
+</string>
+            </property>
+            <property name="text">
+             <string>😱</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QPushButton" name="smileButton_7">
+            <property name="font">
+             <font>
+              <family>Noto Color Emoji</family>
+              <pointsize>24</pointsize>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: transparent; /* Прозрачный фон */
+    border: none; /* Убираем границы */
+    color: black; /* Цвет текста */
+	padding: 0px 0px;
+}
+
+
+
+
+</string>
+            </property>
+            <property name="text">
+             <string>😡</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="4">
+           <widget class="QPushButton" name="smileButton_13">
+            <property name="font">
+             <font>
+              <family>Noto Color Emoji</family>
+              <pointsize>24</pointsize>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: transparent; /* Прозрачный фон */
+    border: none; /* Убираем границы */
+    color: black; /* Цвет текста */
+	padding: 0px 0px;
+}
+
+
+
+
+</string>
+            </property>
+            <property name="text">
+             <string>🤢</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QPushButton" name="smileButton_6">
+            <property name="font">
+             <font>
+              <family>Noto Color Emoji</family>
+              <pointsize>24</pointsize>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: transparent; /* Прозрачный фон */
+    border: none; /* Убираем границы */
+    color: black; /* Цвет текста */
+	padding: 0px 0px;
+}
+
+
+
+
+</string>
+            </property>
+            <property name="text">
+             <string>💩</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="3">
+           <widget class="QPushButton" name="smileButton_9">
+            <property name="font">
+             <font>
+              <family>Noto Color Emoji</family>
+              <pointsize>24</pointsize>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: transparent; /* Прозрачный фон */
+    border: none; /* Убираем границы */
+    color: black; /* Цвет текста */
+	padding: 0px 0px;
+}
+
+
+
+
+</string>
+            </property>
+            <property name="text">
+             <string>😈</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QPushButton" name="smileButton_0">
+            <property name="font">
+             <font>
+              <family>Noto Color Emoji</family>
+              <pointsize>24</pointsize>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: transparent; /* Прозрачный фон */
+    border: none; /* Убираем границы */
+    color: black; /* Цвет текста */
+	padding: 0px 0px;
+}
+
+
+
+
+</string>
+            </property>
+            <property name="text">
+             <string>😃</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="smileButton_3">
+            <property name="font">
+             <font>
+              <family>Noto Color Emoji</family>
+              <pointsize>24</pointsize>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: transparent; /* Прозрачный фон */
+    border: none; /* Убираем границы */
+    color: black; /* Цвет текста */
+	padding: 0px 0px;
+}
+
+
+
+
+</string>
+            </property>
+            <property name="text">
+             <string>😭</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="4">
+           <widget class="QPushButton" name="smileButton_12">
+            <property name="font">
+             <font>
+              <family>Noto Color Emoji</family>
+              <pointsize>24</pointsize>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: transparent; /* Прозрачный фон */
+    border: none; /* Убираем границы */
+    color: black; /* Цвет текста */
+	padding: 0px 0px;
+}
+
+
+
+
+</string>
+            </property>
+            <property name="text">
+             <string>💀</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="4">
+           <widget class="QPushButton" name="smileButton_14">
+            <property name="font">
+             <font>
+              <family>Noto Color Emoji</family>
+              <pointsize>24</pointsize>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+    background-color: transparent; /* Прозрачный фон */
+    border: none; /* Убираем границы */
+    color: black; /* Цвет текста */
+	padding: 0px 0px;
+}
+
+
+
+
+</string>
+            </property>
+            <property name="text">
+             <string>🦫</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(255, 255, 255, 0)
+</string>
+          </property>
+          <property name="text">
+           <string>Name*:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0" colspan="2">
+         <widget class="Line" name="line_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="3">
+       <widget class="QLabel" name="label_6">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(255, 255, 255, 0)
+</string>
+        </property>
+        <property name="text">
+         <string>Users 👥</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" rowspan="3">
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="1" colspan="2">
+         <widget class="QLabel" name="label_2">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgba(255, 255, 255, 0)
+</string>
+          </property>
+          <property name="text">
+           <string>Chat 💬</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="font">
+           <font>
+            <family>Ubuntu</family>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+float: right;
+margin-right: 3%;
+margin-top: 5px;
+border-radius: 5px;
+padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgba(0, 206, 238, 1); 
+border-bottom: 4px solid rgba(0, 150, 174, 1);
+color: white;
+}
+
+QPushButton:hover{
+float: right;
+margin-right: 3%;
+margin-top: 5px;
+border-radius: 5px;
+padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgba(0, 222, 255, 1);
+border-bottom: 4px solid rgba(0, 206, 238,  1);
+color: white;
+}
+
+QPushButton:pressed{
+float: right;
+margin-right: 3%;
+margin-top: 5px;
+border-radius: 5px;
+padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgba(0, 206, 238, 1);
+border-bottom: 0px solid rgba(0, 206, 238, 1);
+color: white;
+}
+
+QPushButton:disabled{
+float: right;
+margin-right: 3%;
+margin-top: 5px;
+border-radius: 5px;
+padding: 5px 9px;
+font-size: 1.2em;
+background-color: rgba(0, 206, 238, 1);
+border-bottom: 0px solid rgba(0, 206, 238, 1);
+color: rgba(0, 222, 255, 1);
+}
+
+
+
+</string>
+          </property>
+          <property name="text">
+           <string>Send ➡️</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" rowspan="3">
+         <widget class="Line" name="line">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="lineEdit">
+          <property name="styleSheet">
+           <string notr="true">background-color: white</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1" colspan="2">
+         <widget class="QTextBrowser" name="textBrowser">
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: white</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="2" rowspan="3">
+       <widget class="Line" name="line_4">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="3">
+     <widget class="QLabel" name="image">
+      <property name="font">
+       <font>
+        <stylestrategy>PreferAntialias</stylestrategy>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0)
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="textFormat">
+       <enum>Qt::PlainText</enum>
+      </property>
+      <property name="pixmap">
+       <pixmap>build/Desktop-Debug/groundhog-day.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>760</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="resoursce.qrc"/>
+ </resources>
+ <connections/>
+</ui>
